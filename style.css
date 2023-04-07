@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#head{
+    top: 0;
+    background-image: linear-gradient(to right, #510addd1 , #854ef3d1);
+    height: 100vh;
+    position: relative;
+}
+.logo{
+    padding-top: 2%;
+    padding-left: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo h1{
+    color: white;
+    font-family:'Segoe UI';
+    font-size: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+nav{
+    padding-top: 2%;
+    padding-right: 19%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li{
+    padding: 0 10px;
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    list-style: none;
+}
+
+button{
+    border-radius:40px;
+    padding: 13px 23px;
+    background-image: linear-gradient(97.82deg, #980dad 14.98%, #4f10fd 103.58%);
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow:  11px 11px 5px rgba(0, 0, 0, 0.615);
+    cursor: pointer;
+}
+button:hover{
+    color: black;
+    background-image: linear-gradient(97.83deg, #e2f72d 14.98%, #e2f72d 103.58%);
+    box-shadow:  12px 12px 8px rgba(243, 238, 164, 0.986);
+    border: 0.5px solid black;
+}
+
+#body{
+    display: flex;
+    /* justify-content: space-between; */
+}
+#body  .leftside{
+    padding:140px 0 0 240px;
+    width: 100vw;
+    /* border: 2px solid black; */
+    
+}
+#body  .leftside h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+#body .leftside h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.562);
+    line-height: 50px;
+    padding-bottom: 50px;
+}
+#body  .rightside {
+    /* border: 2px solid black; */
+    height: 57vh;
+    width: 100vw;
+}
+#body .rightside img{
+    position: relative;
+    animation-name: ani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    top: 140px;
+    animation-direction: alternate;
+}
+@keyframes ani{
+    from{
+        top: 100px;
+    }
+    to{
+        top: 50px;
+    }
+}
+#foot{
+    position: relative;
+    margin-top: 145px;
+    width: 100%;
+    height: 22vh;
+    overflow: hidden;
+}
+#foot .wave {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+
+#foot .wave.wave1 {
+    animation: animate1 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 9s;
+    bottom: 0px;
+}
+@keyframes animate1{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+#foot .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -2s;
+    bottom: 10px;
+}
+@keyframes animate2{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+#foot .wave.wave3 {
+    animation: animate3 7s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -10s;
+    bottom: 10px;
+}
+@keyframes animate3{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+
+#foot .wave.wave4 {
+    animation: animate4 5s linear infinite;
+    z-index: 997;
+    opacity: 0.6;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes animate4{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+.bt button{
+    padding: 20px 30px;
+}
+
+
+
+.bt{
+    padding-top: 0px;
+    height: 20vh;
+    position: absolute;
+    animation-name: ani2;
+    animation-duration: 1.6s;
+    animation-direction: alternate-reverse;
+    
+}
+@keyframes ani2 {
+    from{
+        padding-top: 0px;
+    }
+    to{
+        padding-top: 45px;
+    }
+}
+.bt1{
+    padding-top: 0px;
+    position: absolute;
+    animation-name: ani2;
+    animation-duration: 1.5s;
+    animation-direction: alternate-reverse;
+}
+@keyframes ani2 {
+    from{
+        padding-top: 0px;
+    }
+    to{
+        padding-top: 36px;
+    }
+}
